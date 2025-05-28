@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" href="%VITE_APP_LOGO%"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="keywords" content="%VITE_APP_KEYWORDS%"/>
+    <meta
+            name="description"
+            content="%VITE_APP_DESCRIPTION%"
+    />
+    <title>%VITE_APP_TITLE%</title>
+    <script>
+        // 页面可见性变化事件监听
+        document.addEventListener("visibilitychange", () => {
+            if (document.hidden) {
+                // 离开当前页面
+                document.title = "不要走啊 o(>﹏<)o";
+            } else {
+                // 回到当前页面
+                document.title = "嘿嘿 你又回来了 O(∩_∩)O~";
+                window.setTimeout(() => {
+                    document.title = "bfs博客 - 一个专注于技术分享的平台";
+                }, 800);
+            }
+        }, false);
+
+        // 禁用右键菜单
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();  // 阻止默认右键菜单
+        });
+
+        // 禁用键盘 F12 键（开发者工具快捷键）
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'F12') {
+                e.preventDefault();  // 阻止默认行为
+            }
+        });
+
+        // 控制台样式代码
+        const styleTitle1 = `
+            font-size: 20px;
+            font-weight: 600;
+            color: rgb(244,167,89);
+        `;
+        const styleTitle2 = `
+            font-style: oblique;
+            font-size:14px;
+            color: rgb(244,167,89);
+            font-weight: 400;
+        `;
+        const styleContent = `
+            color: rgb(30,152,255);
+        `;
+
+        // 控制台输出内容
+        const title1 = '🌈 bfs博客 ';
+        const offiUrl = 'https://sheng666.top';
+        const content = `
+版本：1.0
+编写日期：${new Date().toLocaleString()}
+站点简介：
+一个想把全栈流程写全的个人网站。
+🏠 官网: ${offiUrl}
+📬 VX: bfs_1201
+🐧 QQ: 1748160564
+        `;
+
+        console.log(`%c${title1} %c${content}`, styleTitle1, styleContent);
+
+    </script>
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?725f624fdb6a307fa04e422db6d078fd";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</head>
+<body>
+<div id="app"></div>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
