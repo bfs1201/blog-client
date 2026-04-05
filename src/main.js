@@ -12,8 +12,8 @@ gsap.registerPlugin(ScrollTrigger)
 // 配置 vue-lazyload
 Vue.use(VueLazyload, {
   preLoad: 1.3,
-  error: 'https://sheng666.top/imgs/img-error.jpg',
-  loading: 'https://sheng666.top/imgs/lazy.gif',
+  error: 'https://m2d.fun/imgs/img-error.jpg',
+  loading: 'https://m2d.fun/imgs/lazy.gif',
   attempt: 1,
   observer: true,
   observerOptions: {

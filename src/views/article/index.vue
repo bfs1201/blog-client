@@ -433,7 +433,7 @@ export default {
      * 获取加载中的图片
      */
     getLoadingImage() {
-      return 'https://sheng666.top/imgs/lazy.gif'
+      return 'https://m2d.fun/imgs/lazy.gif'
     },
     /**
      * 生成目录

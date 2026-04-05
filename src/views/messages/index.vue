@@ -111,8 +111,8 @@ export default {
   },
   computed: {
     cover() {
-      // var cover = "https://sheng666.top/imgs/1642481294001.png";
-      var cover = "https://sheng666.top/imgs/PixPin_2025-05-16_16-48-59_compressed.png";
+      // var cover = "https://m2d.fun/imgs/1642481294001.png";
+      var cover = "https://m2d.fun/imgs/PixPin_2025-05-16_16-48-59_compressed.png";
 
       return "background: url(" + cover + ") center center / cover no-repeat";
     }
